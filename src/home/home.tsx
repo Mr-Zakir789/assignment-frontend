@@ -209,7 +209,7 @@ export const Home = () => {
       <FilterBar />
 
       {/* Job Cards */}
-      <Grid container spacing={3} mt={2} sx={{ justifyContent: 'center' }}>
+      <Grid container spacing={3} mt={2} mb={3} sx={{ justifyContent: 'left' }}>
       {jobs.map((job) => {
     console.log("Job Data:", job); // Debugging each job object
 
@@ -217,7 +217,7 @@ export const Home = () => {
     const logo = logoMap[job.companyname] || '/assets/defaultLogo.svg';
 
     return (
-      <Grid item key={job.id} xs={6} md={3}>
+      <Grid item key={job.id} xs={12} md={3}>
         <JobCard
           logo={logo}
           timeAgo="2 days ago"
