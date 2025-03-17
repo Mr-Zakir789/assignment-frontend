@@ -209,7 +209,7 @@ export const Home = () => {
       <FilterBar />
 
       {/* Job Cards */}
-      <Grid container spacing={3} mt={2} mb={3} sx={{ justifyContent: 'left' }}>
+      <Grid container spacing={3} mt={2} mb={3} sx={{ justifyContent: { xs: "center", md: "flex-start" } }}>
       {jobs.map((job) => {
     console.log("Job Data:", job); // Debugging each job object
 
